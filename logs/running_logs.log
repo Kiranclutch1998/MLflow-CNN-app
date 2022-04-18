@@ -1,0 +1,45 @@
+[2022-04-19 01:29:08,931: INFO: stage_00_template]: 
+********************
+[2022-04-19 01:29:08,931: INFO: stage_00_template]: >>>>> stage STAGE_NAME started <<<<<
+[2022-04-19 01:29:08,940: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 01:29:08,945: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-04-19 01:29:08,945: INFO: stage_00_template]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-04-19 02:24:09,511: INFO: stage_01_get_data]: 
+********************
+[2022-04-19 02:24:09,511: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME started <<<<<
+[2022-04-19 02:24:09,514: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 02:24:09,515: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-04-19 02:24:09,515: INFO: stage_01_get_data]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-04-19 02:26:21,963: INFO: stage_01_get_data]: 
+********************
+[2022-04-19 02:26:21,963: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-04-19 02:26:21,978: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 02:26:21,978: ERROR: stage_01_get_data]: 'data'
+Traceback (most recent call last):
+  File "src/stage_01_get_data.py", line 54, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_01_get_data.py", line 24, in main
+    URL = config["data"]["source_url"]
+KeyError: 'data'
+[2022-04-19 02:27:07,849: INFO: stage_01_get_data]: 
+********************
+[2022-04-19 02:27:07,849: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-04-19 02:27:07,849: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 02:27:07,849: INFO: common]: created directory at: data
+[2022-04-19 02:27:07,849: INFO: stage_01_get_data]: downloading started...
+[2022-04-19 02:34:20,390: INFO: stage_01_get_data]: filename:data\data.zip created with info 
+Content-Type: application/octet-stream
+Accept-Ranges: bytes
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-blob-content-md5: l2WJyK3tt5/f2azyQ9eE8w==
+Last-Modified: Sat, 13 Oct 2018 12:14:22 GMT
+ETag: "0x8D6310568FD1DF6"
+Content-Length: 824894548
+Date: Mon, 18 Apr 2022 20:57:09 GMT
+Connection: close
+
+
+[2022-04-19 02:34:20,390: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
