@@ -390,3 +390,39 @@ PIL.UnidentifiedImageError: cannot identify image file 'data/data\\PetImages\\Do
 [2022-04-19 15:28:36,710: INFO: common]: created directory at: data/data\bad_data
 [2022-04-19 15:28:47,162: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
 
+[2022-04-19 17:10:00,347: INFO: stage_02_base_model_creation]: 
+********************
+[2022-04-19 17:10:00,347: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION started <<<<<
+[2022-04-19 17:10:00,352: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 17:10:00,352: INFO: stage_02_base_model_creation]: layers defined
+[2022-04-19 17:10:04,045: INFO: stage_02_base_model_creation]: base model summary:
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 178, 178, 32)      896       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 89, 89, 32)       0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 87, 87, 32)        9248      
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 43, 43, 32)       0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (None, 59168)             0         
+                                                                 
+ dense (Dense)               (None, 8)                 473352    
+                                                                 
+ dense_1 (Dense)             (None, 2)                 18        
+                                                                 
+=================================================================
+Total params: 483,514
+Trainable params: 483,514
+Non-trainable params: 0
+_________________________________________________________________
+
+[2022-04-19 17:10:04,066: INFO: common]: created directory at: data\model
+[2022-04-19 17:10:05,536: INFO: stage_02_base_model_creation]: model is saved at : data\model\init_model.h5
+[2022-04-19 17:10:05,538: INFO: stage_02_base_model_creation]: >>>>> stage BASE MODEL CREATION completed!<<<<<
+
