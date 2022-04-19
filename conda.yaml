@@ -38,6 +38,7 @@ dependencies:
     - oauthlib==3.2.0
     - packaging==21.3
     - pandas==1.3.5
+    - Pillow==9.1.0
     - prometheus-client==0.14.1
     - prometheus-flask-exporter==0.20.1
     - protobuf==3.20.0
@@ -62,4 +63,5 @@ dependencies:
     - websocket-client==1.3.2
     - werkzeug==2.1.1
     - zipp==3.8.0
+    
 prefix: C:\Users\kiran\Downloads\dogcat classification\MLflow-cnnapp\env
