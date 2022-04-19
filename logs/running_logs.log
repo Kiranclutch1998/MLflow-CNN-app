@@ -43,3 +43,23 @@ Connection: close
 
 [2022-04-19 02:34:20,390: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
 
+[2022-04-19 13:05:49,824: INFO: stage_01_get_data]: 
+********************
+[2022-04-19 13:05:49,837: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-04-19 13:05:49,844: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 13:05:49,857: INFO: common]: created directory at: data
+[2022-04-19 13:05:49,917: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-04-19 13:05:49,917: INFO: stage_01_get_data]: data already extracted
+[2022-04-19 13:05:49,917: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-04-19 13:12:08,373: INFO: stage_01_get_data]: 
+********************
+[2022-04-19 13:12:08,373: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-04-19 13:12:08,377: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-04-19 13:12:08,377: INFO: common]: created directory at: data
+[2022-04-19 13:12:08,377: INFO: stage_01_get_data]: filename:data.zip already present
+[2022-04-19 13:12:08,381: INFO: common]: created directory at: data/data
+[2022-04-19 13:12:08,381: INFO: common]: extraction started...
+[2022-04-19 13:21:26,394: INFO: common]: extracted data\data.zip to data/data
+[2022-04-19 13:21:26,411: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
